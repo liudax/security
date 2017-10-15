@@ -35,6 +35,7 @@ public class DemoApplication {
 
     @GetMapping("/hello")
     public String hello(){
+        System.out.println();
         return "hello security";
     }
 }
