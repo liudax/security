@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be0f1412-8f9e-4af7-a64b-8ed901a7274c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lss-security-demo/src/main/java/com/lss/DemoApplication.java" afterPath="$PROJECT_DIR$/../lss-security-demo/src/main/java/com/lss/DemoApplication.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -911,8 +910,16 @@
       <workItem from="1508066099248" duration="411000" />
       <workItem from="1508066516645" duration="191000" />
       <workItem from="1508066710724" duration="233000" />
-      <workItem from="1508072428124" duration="85000" />
+      <workItem from="1508072428124" duration="166000" />
     </task>
+    <task id="LOCAL-00001" summary="测试git push">
+      <created>1508072584637</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1508072584637</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -948,7 +955,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11032000" />
+    <option name="totallyTimeSpent" value="11113000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1924" height="1038" extended-state="0" />
@@ -999,7 +1006,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="测试git push" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试git push" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
