@@ -36,14 +36,6 @@
                 </executions>
             </plugin>
         </plugins>
-        <!--<resources>
-            <resource>
-                <directory>src/main/resource</directory>
-                <includes>
-                    <include>**.*</include>
-                </includes>
-            </resource>
-        </resources>-->
         <finalName>demo</finalName>
     </build>
 

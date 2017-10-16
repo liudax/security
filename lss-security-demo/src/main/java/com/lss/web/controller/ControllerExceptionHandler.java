@@ -13,11 +13,11 @@ import java.util.Map;
 /**
  * Created by Magic on 2017/10/15.
  *
- * ControllerAdvice 注解表示该控制器专门处理controller抛出的异常
+ * ControllerAdvice 字面意思增强的Controller,主要用于异常处理器
  */
 @ControllerAdvice
 public class ControllerExceptionHandler {
-
+    
     @ExceptionHandler(UserNotExistException.class)
     @ResponseBody
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
@@ -25,7 +25,6 @@ public class ControllerExceptionHandler {
         Map<String,Object> result = new HashMap<>();
         result.put("id",ex.getId());
         result.put("message",ex.getMessage());
-
         return result;
     }
 }
