@@ -25,7 +25,6 @@ public class UserController {
             errors.getAllErrors().stream().forEach(e-> {
                 FieldError fieldError = (FieldError)e;
                 System.out.println(fieldError.getField()+" "+fieldError.getDefaultMessage());
-               // System.out.println("错误："+e.getDefaultMessage());
             });
         }
         System.out.println("用户名："+user.getUserName());
