@@ -4,18 +4,7 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be0f1412-8f9e-4af7-a64b-8ed901a7274c" name="Default" comment="add code">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lss-security-demo/src/main/java/com/lss/web/aspect/MyAspect.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lss-security-demo/src/main/java/com/lss/web/config/WebConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lss-security-demo/src/main/java/com/lss/web/interceptor/MyInterceptor.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lss-security-demo/src/main/java/com/lss/web/Test.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lss-security-demo/target/classes/application.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lss-security-demo/target/classes/com/lss/DemoApplication.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lss-security-demo/target/classes/com/lss/web/controller/UserController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lss-security-demo/target/test-classes/com/lss/web/controller/UserControllerTest.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lss-security-demo/lss-security-demo.iml" afterPath="$PROJECT_DIR$/../lss-security-demo/lss-security-demo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lss-security-demo/pom.xml" afterPath="$PROJECT_DIR$/../lss-security-demo/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lss-security-demo/src/main/java/com/lss/web/controller/UserController.java" afterPath="$PROJECT_DIR$/../lss-security-demo/src/main/java/com/lss/web/controller/UserController.java" />
+    <list default="true" id="be0f1412-8f9e-4af7-a64b-8ed901a7274c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1062,7 +1051,7 @@
       <workItem from="1508066710724" duration="233000" />
       <workItem from="1508072428124" duration="5412000" />
       <workItem from="1508119261334" duration="714000" />
-      <workItem from="1508140808439" duration="6548000" />
+      <workItem from="1508140808439" duration="6569000" />
     </task>
     <task id="LOCAL-00001" summary="测试git push">
       <created>1508072584637</created>
@@ -1092,7 +1081,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508145193728</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add code">
+      <created>1508148814743</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1508148814743</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1128,7 +1124,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23621000" />
+    <option name="totallyTimeSpent" value="23642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1924" height="1038" extended-state="0" />
