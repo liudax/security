@@ -1,6 +1,5 @@
 package com.lss.web.interceptor;
 
-import org.springframework.stereotype.Component;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
@@ -13,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
  * @date 17:32 2017/10/16
  * @description
  */
-@Component
+//@Component
 public class MyInterceptor implements HandlerInterceptor {
 
 

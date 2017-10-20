@@ -1,7 +1,9 @@
 package com.lss.web.aspect;
 
+import org.apache.log4j.Logger;
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
-import org.springframework.stereotype.Component;
 
 /**
  * @author Magic
@@ -9,7 +11,17 @@ import org.springframework.stereotype.Component;
  * @description
  */
 @Aspect
-@Component
+//@Component
 public class MyAspect {
 
+    private Logger logger = Logger.getLogger(MyAspect.class);
+
+
+    @Around("execution(* com.lss.web.controller.AsyncController.*(..))")
+    public Object handleControllerMethod(ProceedingJoinPoint pjp) throws Throwable {
+        logger.info("方法执行前");
+        Object obj = pjp.proceed();
+        logger.info("方法执行后");
+        return obj;
+    }
 }

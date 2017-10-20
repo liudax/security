@@ -6,6 +6,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
+import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
@@ -41,10 +42,12 @@ public class UserControllerTest {
 
     @Test
     public void query() throws Exception {
-        mockMvc.perform(MockMvcRequestBuilders.get("/user")   //get方法
+        String result = mockMvc.perform(MockMvcRequestBuilders.get("/async")   //get方法
                         .contentType(MediaType.APPLICATION_JSON_UTF8))
-                        .andExpect(status().isOk()); //期望，返回code
+                        .andExpect(status().isOk()) //期望，返回code
+                        .andReturn().getResponse().getContentAsString();
                        // .andExpect(jsonPath("$.length()").value(3));
+        System.out.println(result);
     }
 
     @Test
@@ -81,6 +84,15 @@ public class UserControllerTest {
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andReturn().getResponse().getContentAsString();
         System.out.println(result);
+    }
+
+    @Test
+    public void fileUpload() throws Exception {
+        MockMultipartFile mockFile = new MockMultipartFile("file","test.txt",
+                "multipart/form-data","测试数据".getBytes("utf-8"));
+        mockMvc.perform(MockMvcRequestBuilders.fileUpload("/file/upload")
+                .file(mockFile))
+                .andExpect(MockMvcResultMatchers.status().isOk());
     }
 
 }
