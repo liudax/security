@@ -4,6 +4,8 @@ import com.fasterxml.jackson.annotation.JsonView;
 import com.lss.dto.User;
 import com.lss.exception.UserNotExistException;
 import org.apache.log4j.Logger;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
@@ -20,12 +22,13 @@ import java.util.List;
  * Created by Magic on 2017/10/14.
  */
 @RestController
+@RequestMapping("/user")
 public class UserController {
     final static String FOLDER =  "D:\\workspace\\idea\\security\\lss-security-demo\\src\\main\\java\\com\\lss\\web\\controller";
 
     private Logger logger = Logger.getLogger(UserController.class);
     //RequestBody注解，将请求的json字符串组装到user对象中
-    @PostMapping("/user")
+    @PostMapping()
     public User createUser(@Valid @RequestBody User user, BindingResult errors, MultipartFile file) throws IOException {
         if(errors.hasErrors()){
             errors.getAllErrors().stream().forEach(e-> {
@@ -44,7 +47,7 @@ public class UserController {
     }
 
     @JsonView(User.SimpleView.class)
-    @GetMapping("/user")
+    @GetMapping()
     public List<User> query(){
         List<User> users = new ArrayList<>();
         logger.info("正在查询所有用户信息");
@@ -70,5 +73,9 @@ public class UserController {
         return  "id为"+id+"的用户修改成功";
     }
 
+    @GetMapping("/me")
+    public UserDetails me(@AuthenticationPrincipal UserDetails user){
+        return user;
+    }
 
 }

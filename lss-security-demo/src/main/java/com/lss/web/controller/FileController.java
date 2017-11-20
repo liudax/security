@@ -17,6 +17,7 @@ import java.util.Properties;
  * @description
  */
 @RestController
+@RequestMapping("/file")
 public class FileController {
 
     final static String FOLDER =  "D:\\workspace\\idea\\security\\lss-security-demo\\src\\main\\java\\com\\lss\\web\\controller";

@@ -2,7 +2,6 @@ package com.lss.web.filter;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Component;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
@@ -14,7 +13,7 @@ import java.io.IOException;
  * @date 16:18 2017/10/16
  * @description
  */
-@Component
+//@Component
 public class CrossFilter implements Filter{
 
     private Logger logger = LoggerFactory.getLogger(getClass());
@@ -27,7 +26,6 @@ public class CrossFilter implements Filter{
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         HttpServletResponse res = (HttpServletResponse)response;
         HttpServletRequest req = (HttpServletRequest)request;
-        //Object obj = req.getAttribute("key1");
         logger.info("进入过滤器,url为"+req.getServletPath());
         res.setHeader("Access-Control-Allow-Origin","*");
         res.setHeader("Access-Control-Allow-Methods","*");
