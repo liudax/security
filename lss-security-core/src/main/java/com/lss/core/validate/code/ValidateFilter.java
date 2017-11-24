@@ -49,7 +49,7 @@ public class ValidateFilter extends OncePerRequestFilter{
             urls.add(configUrl);
             logger.info(configUrl);
         }
-
+        //urls.add("/authentication/mobile");
         urls.add("/authentication/form");
     }
 
