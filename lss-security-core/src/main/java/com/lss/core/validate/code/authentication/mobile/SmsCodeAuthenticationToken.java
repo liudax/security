@@ -1,4 +1,4 @@
-package com.lss.core.validate.code.authentication;
+package com.lss.core.validate.code.authentication.mobile;
 
 import org.springframework.security.authentication.AbstractAuthenticationToken;
 import org.springframework.security.core.GrantedAuthority;
